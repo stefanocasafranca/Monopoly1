@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		4964A49C2CE3AF8500F2C716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964A49B2CE3AF8500F2C716 /* AppDelegate.swift */; };
 		4964A49E2CE3AF8500F2C716 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964A49D2CE3AF8500F2C716 /* SceneDelegate.swift */; };
-		4964A4A02CE3AF8500F2C716 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964A49F2CE3AF8500F2C716 /* ViewController.swift */; };
 		4964A4A32CE3AF8500F2C716 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4964A4A12CE3AF8500F2C716 /* Main.storyboard */; };
 		4964A4A62CE3AF8500F2C716 /* Monopoly1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4964A4A42CE3AF8500F2C716 /* Monopoly1.xcdatamodeld */; };
 		4964A4A82CE3AF8700F2C716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4964A4A72CE3AF8700F2C716 /* Assets.xcassets */; };
 		4964A4AB2CE3AF8700F2C716 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4964A4A92CE3AF8700F2C716 /* LaunchScreen.storyboard */; };
+		4964A4B32CE3B14200F2C716 /* MonopolyTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964A4B22CE3B14200F2C716 /* MonopolyTableTableViewController.swift */; };
+		4964A4B52CE3B26800F2C716 /* Monopoly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964A4B42CE3B26800F2C716 /* Monopoly.swift */; };
+		4964A4B92CE3BC9F00F2C716 /* BoardSquareTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964A4B82CE3BC9F00F2C716 /* BoardSquareTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4964A4982CE3AF8500F2C716 /* Monopoly1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monopoly1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4964A49B2CE3AF8500F2C716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4964A49D2CE3AF8500F2C716 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4964A49F2CE3AF8500F2C716 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4964A4A22CE3AF8500F2C716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4964A4A52CE3AF8500F2C716 /* Monopoly1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Monopoly1.xcdatamodel; sourceTree = "<group>"; };
 		4964A4A72CE3AF8700F2C716 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4964A4AA2CE3AF8700F2C716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4964A4AC2CE3AF8700F2C716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4964A4B22CE3B14200F2C716 /* MonopolyTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonopolyTableTableViewController.swift; sourceTree = "<group>"; };
+		4964A4B42CE3B26800F2C716 /* Monopoly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monopoly.swift; sourceTree = "<group>"; };
+		4964A4B82CE3BC9F00F2C716 /* BoardSquareTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardSquareTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +64,10 @@
 			children = (
 				4964A49B2CE3AF8500F2C716 /* AppDelegate.swift */,
 				4964A49D2CE3AF8500F2C716 /* SceneDelegate.swift */,
-				4964A49F2CE3AF8500F2C716 /* ViewController.swift */,
 				4964A4A12CE3AF8500F2C716 /* Main.storyboard */,
+				4964A4B82CE3BC9F00F2C716 /* BoardSquareTableViewCell.swift */,
+				4964A4B42CE3B26800F2C716 /* Monopoly.swift */,
+				4964A4B22CE3B14200F2C716 /* MonopolyTableTableViewController.swift */,
 				4964A4A72CE3AF8700F2C716 /* Assets.xcassets */,
 				4964A4A92CE3AF8700F2C716 /* LaunchScreen.storyboard */,
 				4964A4AC2CE3AF8700F2C716 /* Info.plist */,
@@ -142,9 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4964A4A62CE3AF8500F2C716 /* Monopoly1.xcdatamodeld in Sources */,
-				4964A4A02CE3AF8500F2C716 /* ViewController.swift in Sources */,
+				4964A4B32CE3B14200F2C716 /* MonopolyTableTableViewController.swift in Sources */,
+				4964A4B52CE3B26800F2C716 /* Monopoly.swift in Sources */,
 				4964A49C2CE3AF8500F2C716 /* AppDelegate.swift in Sources */,
 				4964A49E2CE3AF8500F2C716 /* SceneDelegate.swift in Sources */,
+				4964A4B92CE3BC9F00F2C716 /* BoardSquareTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
