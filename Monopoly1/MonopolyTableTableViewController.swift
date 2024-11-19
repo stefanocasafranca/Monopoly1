@@ -34,23 +34,36 @@ class MonopolyTableTableViewController: UITableViewController {
         
         let section = indexPath.section
         let row = indexPath.row
-        let theSquare = theBoard [row]
-        
-        if theSquare.GROUP
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "BASIC", for: indexPath)
-
-        // Configure the cell...
-        
-        
-        var content = cell.defaultContentConfiguration()
-        content.text = "\(theSquare.order)"
-        content.secondaryText = "\(theSquare.group)"
-        cell.contentConfiguration = content
-
-        return cell
-    }
+        let theSquare = theBoard[row]
+        if theSquare.isProperty (){
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PROPERTY",
+                for: indexPath) as? BoardSquareTableViewCell
+            if let unwrappedSquare = theSquare as? BoardSquareTableViewCell.Square {
+                cell?.configure(withDataFromSquare: unwrappedSquare)
+            } else {
+                // Handle the case where the cast fails (e.g., print an error, or configure differently)
+            }
+        return cell!
     
+        } else {
+            
+            // Configure the cell...
+
+            let cell = tableView.dequeueReusableCell(withIdentifier: "BASIC", for: indexPath)
+            var content = cell.defaultContentConfiguration()
+            content.text = "\(theSquare.order)"
+            content.secondaryText = "\(theSquare.group)"
+            cell.contentConfiguration = content
+
+            return cell
+        }
+    
+}
+
+
+
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -97,4 +110,4 @@ class MonopolyTableTableViewController: UITableViewController {
     }
     */
 
-}
+
